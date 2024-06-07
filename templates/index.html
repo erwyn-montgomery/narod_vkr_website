@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}Главная страница – архив Narod.ru{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/search_form.css' %}">
+<link rel="stylesheet" href="{% static 'css/main_page.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="header-container">
+        <h1>Архив сайтов портала Narod.ru</h1>
+        <div class="intro-text">Данный ресурс был разработан в рамках ВКР "Разработка инструмента для исследования больших гетерогенных датасетов на примере сайтов портала Narod.ru" для программы "Прикладной анализ данных" ЕУСПб. Его цель - сохранить сайты портала Narod.ru и предоставить пользователям возможность их исследовать.</div>
+    </div>
+    <div>
+        <form action="{% url 'search_results' %}" method="get" class="search-form">
+            <div class="search-controls">
+                <input type="search" name="q" placeholder="Введите текст или ссылку" class="search-input">
+                <input type="submit" value="Поиск" class="search-button">
+            </div>
+            <div class="search-options">
+                <label>
+                    <input type="radio" name="search_type" value="text" class="search-radio" checked>
+                    Текстовый поиск
+                </label>
+                <label>
+                    <input type="radio" name="search_type" value="url" class="search-radio">
+                    Поиск по ссылкам
+                </label>
+            </div>
+        </form>
+    </div>
+    <div class="link-container">
+        <a href="{% url 'advanced_search' %}">Расширенный поиск</a>
+    </div>
+{% endblock %}

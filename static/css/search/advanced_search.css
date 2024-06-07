@@ -1,0 +1,198 @@
+.header-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.search-form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 20px 0;
+}
+
+.search-options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.search-label {
+    margin-right: 15px;
+    font-size: 16px; 
+    color: #333;
+}
+
+.search-checkbox {
+    margin-right: 5px;
+    width: 20px; 
+    height: 20px; 
+}
+
+.search-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 100%;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    font-size: 16px;
+    height: 40px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+.short-input {
+    width: 15%;
+    min-width: 50px;
+}
+
+.search-select {
+    width: 100%; 
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    font-size: 16px;
+    height: 40px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+.file-extension-label, .form-inline, .form-group {
+    margin-bottom: 15px;
+}
+
+.form-group, .form-inline {
+    width: 70%;
+}
+
+.search-button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.search-button {
+    padding: 15px 30px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    box-sizing: border-box;
+    width: auto;
+}
+
+.search-button:hover {
+    background-color: #555;
+}
+
+.hidden-checkbox {
+    display: none;
+}
+
+.additional-filters {
+    display: none;
+    margin-top: 10px;
+    width: 70%;
+}
+
+.hidden-checkbox:checked + .additional-filters {
+    display: block;
+}
+
+.toggle-label {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+.form-inline {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.form-inline label {
+    margin-right: 10px;
+}
+
+.form-inline input, .form-inline select {
+    margin-right: 10px;
+}
+
+.form-inline .search-input, .form-inline .search-select {
+    width: auto;
+    flex: 1;
+}
+
+.inline-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.inline-group label {
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.form-group span {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.section-title {
+    display: block;
+    width: 100%;
+    background: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    cursor: pointer;
+    text-align: center;
+}
+
+.section {
+    display: none;
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+input[type="radio"]:checked + .section {
+    display: block;
+}
+
+input[type="radio"] {
+    display: none;
+}
